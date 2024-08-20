@@ -1,1 +1,96 @@
 
+*{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("Fonts/Norse-Bold.otf");
+}
+body{
+    background-image: url("Images/dana-katharina-background.jpg");
+}
+
+.leftContainer{
+    width: 40%;
+}
+
+.logo{
+    background-color:black;
+    opacity: 40%;
+    color:aliceblue;
+    margin-right:10px;
+    height:250px;
+    font-size:100px;
+    position:absolute;
+    top:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:600px;
+    font-family: Norse-Bold;
+
+}
+
+.image{
+    height:150px;
+    width:auto;
+}
+
+.cite{
+    font-size:15px;
+    color:aliceblue;
+    position:absolute;
+    bottom:5px;
+    left: 150px;
+}
+
+.rightContainer{
+    height:100vh;
+    width: 60%;
+    position:absolute;
+    right:10px;
+    background-color:black;
+
+}
+
+button{
+    color:white;
+    background-color: #596D48;
+    border:none;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: large;
+}
+#formHeader{
+    background-color:rgb(222, 222, 222);
+    height:33vh;
+    font-size: 20px;
+    display:
+}
+
+.italic{
+    font-style:italic;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+#formBody{
+    background-color:whitesmoke;
+    height:34vh;
+}
+
+
+#formFooter{
+    background-color:rgb(222, 222, 222);
+    height:33vh;
+    font-size: 15px;
+
+}
