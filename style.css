@@ -1,8 +1,7 @@
 
 *{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -53,6 +52,8 @@ body{
     height:100vh;
     width: 60%;
     background-color:black;
+    
+
 }
 
 button{
@@ -70,8 +71,8 @@ button{
 #formHeader{
     background-color:rgb(222, 222, 222);
     height:calc(100%/3);
-    font-size: 20px;
-    display:
+    font-size: 25px;
+    min-height:175px;
 }
 
 .italic{
@@ -86,12 +87,39 @@ button{
     background-color:whitesmoke;
     height:calc(100%/3);
     box-shadow:5px, 10px;
+    font-size:25px;
+    box-shadow:10px 10px black;
+    min-height:225px;
 }
 
+.row1, .row2, .row3{
+    display:flex;
+    padding:10px;
+    gap: 40px;
+}
+
+label{
+    display:block;   
+    font-size: 10px;
+}
+
+input{
+    height:20px;
+    border-radius: 4px;
+    outline:none;
+}
+input[type=text]:focus{
+    border: 1px solid rgb(25, 62, 224);
+}
+
+
+input:required{
+    border: 1px solid red;
+}
 
 #formFooter{
     background-color:rgb(222, 222, 222);
     height: calc(100%/3);
     font-size: 15px;
-
+    min-height:175px;
 }
