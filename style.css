@@ -2,6 +2,7 @@
 *{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 @font-face {
@@ -10,9 +11,11 @@
 }
 body{
     background-image: url("Images/dana-katharina-background.jpg");
+    box-sizing:border-box;
+    display:flex;
 }
 
-.leftContainer{
+#leftContainer{
     width: 40%;
 }
 
@@ -46,13 +49,10 @@ body{
     left: 150px;
 }
 
-.rightContainer{
+#rightContainer{
     height:100vh;
     width: 60%;
-    position:absolute;
-    right:10px;
     background-color:black;
-
 }
 
 button{
@@ -69,7 +69,7 @@ button{
 }
 #formHeader{
     background-color:rgb(222, 222, 222);
-    height:33vh;
+    height:calc(100%/3);
     font-size: 20px;
     display:
 }
@@ -84,13 +84,14 @@ button{
 
 #formBody{
     background-color:whitesmoke;
-    height:34vh;
+    height:calc(100%/3);
+    box-shadow:5px, 10px;
 }
 
 
 #formFooter{
     background-color:rgb(222, 222, 222);
-    height:33vh;
+    height: calc(100%/3);
     font-size: 15px;
 
 }
