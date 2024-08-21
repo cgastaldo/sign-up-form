@@ -16,27 +16,27 @@ body{
 
 #leftContainer{
     width: 40%;
+    box-sizing: border-box;
+    align-items: center;
+    min-width: 400px;
 }
 
 .logo{
     background-color:black;
-    opacity: 40%;
+    opacity: 30%;
     color:aliceblue;
-    margin-right:10px;
-    height:250px;
+    font-family: Norse-Bold;
+    height:160px;
     font-size:100px;
-    position:absolute;
-    top:30%;
     display:flex;
     align-items: center;
     justify-content: center;
-    width:600px;
-    font-family: Norse-Bold;
-
+    position:relative;
+    top:135px;
 }
 
 .image{
-    height:150px;
+    height:100px;
     width:auto;
 }
 
@@ -45,15 +45,15 @@ body{
     color:aliceblue;
     position:absolute;
     bottom:5px;
-    left: 150px;
+    left: 75px;
 }
 
 #rightContainer{
     height:100vh;
     width: 60%;
     background-color:black;
-    
-
+    min-width:500px;
+    box-sizing: border-box;
 }
 
 button{
@@ -69,10 +69,17 @@ button{
     font-size: large;
 }
 #formHeader{
-    background-color:rgb(222, 222, 222);
+    background-color:rgb(245, 245, 245);
     height:calc(100%/3);
     font-size: 25px;
     min-height:175px;
+    align-content:flex-end;
+    padding-left:40px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#formHeader p{
+    max-width: 550px;
 }
 
 .italic{
@@ -84,17 +91,25 @@ button{
 }
 
 #formBody{
-    background-color:whitesmoke;
+    background-color:white;
     height:calc(100%/3);
     box-shadow:5px, 10px;
     font-size:25px;
     box-shadow:10px 10px black;
     min-height:225px;
+    padding-left:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
 }
 
 .row1, .row2, .row3{
     display:flex;
     padding:10px;
+    padding-left:0px;
     gap: 40px;
 }
 
@@ -110,7 +125,7 @@ input{
 }
 input[type=text]:focus{
     border: 1px solid rgb(25, 62, 224);
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
 
 
 input:required{
@@ -118,8 +133,14 @@ input:required{
 }
 
 #formFooter{
-    background-color:rgb(222, 222, 222);
+    background-color:rgb(245, 245, 245);
     height: calc(100%/3);
     font-size: 15px;
     min-height:175px;
+    padding:40px;   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#formFooter p {
+    margin-top: 30px;
 }
